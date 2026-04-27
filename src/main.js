@@ -16,9 +16,11 @@ import {
     Select,
     SelectButton, Tabs, Textarea, Toast, Toolbar, Tooltip
 } from "primevue";
+import router from "./router.js";
 
 createApp(App)
     .use(i18n)
+    .use(router)
     .use(PrimeVue, {theme:{preset:Materials}, ripple:true})
     .use(ConfirmationService)
     .use(DialogService)
