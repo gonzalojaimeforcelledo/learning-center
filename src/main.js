@@ -21,6 +21,7 @@ import router from "./router.js";
 createApp(App)
     .use(i18n)
     .use(router)
+    .use(pinia)
     .use(PrimeVue, {theme:{preset:Materials}, ripple:true})
     .use(ConfirmationService)
     .use(DialogService)
