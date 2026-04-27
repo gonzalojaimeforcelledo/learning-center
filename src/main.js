@@ -18,6 +18,7 @@ import {
 } from "primevue";
 
 createApp(App)
+    .use(i18n)
     .use(PrimeVue, {theme:{preset:Materials}, ripple:true})
     .use(ConfirmationService)
     .use(DialogService)
